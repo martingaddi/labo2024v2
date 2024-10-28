@@ -16,14 +16,23 @@ PARAM$experimento <- "KA4210"
 PARAM$input$training <- c(202107) # meses donde se entrena el modelo
 PARAM$input$future <- c(202109) # meses donde se aplica el modelo
 
+PARAM$finalmodel$num_iterations <- 69
+PARAM$finalmodel$learning_rate <- 0.19630099670994
+PARAM$finalmodel$feature_fraction <- 0.869029000502782
+PARAM$finalmodel$min_data_in_leaf <- 400
+PARAM$finalmodel$num_leaves <- 32
 
-PARAM$finalmodel$num_iterations <- 1000
-PARAM$finalmodel$learning_rate <- 0.027
-PARAM$finalmodel$feature_fraction <- 0.8
-PARAM$finalmodel$min_data_in_leaf <- 76
-PARAM$finalmodel$num_leaves <- 8
+PARAM$finalmodel$max_depth <- 9
+PARAM$finalmodel$bagging_fraction <- 0.700595433502589
+PARAM$finalmodel$bagging_freq <- 3
+PARAM$finalmodel$lambda_l1 <- 6.34282379276933
+PARAM$finalmodel$lambda_l2 <- 7.90552303816683
+PARAM$finalmodel$min_gain_to_split <- 0.00200802529328731
 
 PARAM$finalmodel$max_bin <- 31
+
+
+
 
 #------------------------------------------------------------------------------
 # graba a un archivo los componentes de lista
@@ -117,7 +126,14 @@ modelo <- lgb.train(
     num_leaves = PARAM$finalmodel$num_leaves,
     min_data_in_leaf = PARAM$finalmodel$min_data_in_leaf,
     feature_fraction = PARAM$finalmodel$feature_fraction,
-    seed = miAmbiente$semilla_primigenia
+    seed = miAmbiente$semilla_primigenia,
+    #Sumados
+    max_depth = PARAM$finalmodel$max_depth,
+    bagging_fraction = PARAM$finalmodel$bagging_fraction,
+    bagging_freq = PARAM$finalmodel$bagging_freq,
+    lambda_l1 = PARAM$finalmodel$lambda_l1,
+    lambda_l2 = PARAM$finalmodel$lambda_l2,
+    min_gain_to_split = PARAM$finalmodel$min_gain_to_split
   )
 )
 
@@ -164,7 +180,7 @@ setorder(tb_entrega, -prob)
 # genero archivos con los  "envios" mejores
 # suba TODOS los archivos a Kaggle
 
-cortes <- seq(9000, 13500, by = 500)
+cortes <- seq(1400, 1600, by = 50)
 for (envios in cortes) {
   tb_entrega[, Predicted := 0L]
   tb_entrega[1:envios, Predicted := 1L]
@@ -185,6 +201,13 @@ for (envios in cortes) {
     " num_leaves=", PARAM$finalmodel$num_leaves,
     " min_data_in_leaf=", PARAM$finalmodel$min_data_in_leaf,
     " feature_fraction=", PARAM$finalmodel$feature_fraction,
+    " max_depth =", PARAM$finalmodel$max_depth,
+    " bagging_fraction =", PARAM$finalmodel$bagging_fraction,
+    " bagging_freq =", PARAM$finalmodel$bagging_freq,
+    " lambda_l1 =", PARAM$finalmodel$lambda_l1,
+    " lambda_l2 =", PARAM$finalmodel$lambda_l2,
+    " min_gain_to_split =", PARAM$finalmodel$min_gain_to_split,
+    
     "'"
   )
 
