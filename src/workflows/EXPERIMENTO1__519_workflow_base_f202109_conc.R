@@ -12,8 +12,8 @@ if( !exists("envg") ) envg <- env()  # global environment
 
 envg$EXPENV <- list()
 envg$EXPENV$bucket_dir <- "~/buckets/b1/"
-envg$EXPENV$exp_dir <- "~/buckets/b2/exp-final-largo/exp/"
-envg$EXPENV$wf_dir <- "~/buckets/b2/exp-final-largo/flow/"
+envg$EXPENV$exp_dir <- "~/buckets/b4/exp-final-sumaPCA/exp/"
+envg$EXPENV$wf_dir <- "~/buckets/b4/exp-final-sumaPCA/flow/"
 envg$EXPENV$repo_dir <- "~/labo2024v2/"
 envg$EXPENV$datasets_dir <- "~/buckets/b1/datasets/"
 envg$EXPENV$arch_ambiente <- "miAmbiente.yml"
@@ -488,7 +488,16 @@ reducir_dimensionalidad_con_nulos <- function( pinputexps ) {
   return(exp_correr_script(param_local))
 }
 
-
+sumar_PCA <- function( pinputexps ) {
+  # Primero excluimos las variables que no deben formar parte de esta reducción
+  
+  if( -1 == (param_local <- exp_init())$resultado ) return( 0 ) # linea fija
+  
+  param_local$meta$script <- "/src/wf-etapas/SUMA_Dimensionalidad_Script_Exp.R"
+  
+  
+  return(exp_correr_script(param_local))
+}
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
 
@@ -578,8 +587,8 @@ wf_Exp2 <- function( pnombrewf )
   #CN_canaritos_asesinos_base(ratio=0.2, desvio=4.0)
   
   #Agrego la reducción
-  reducir_dimensionalidad_con_nulos()
-  
+  #reducir_dimensionalidad_con_nulos()
+  sumar_PCA()
   
   ts9 <- TS_strategy_base9()
   ht <- HT_tuning_base( bo_iteraciones = 50 )  # iteraciones inteligentes
