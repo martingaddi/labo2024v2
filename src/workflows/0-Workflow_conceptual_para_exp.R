@@ -23,7 +23,8 @@ PARAM <- "src/workflows/1-Baseline_Largo.R"
 #PARAM <- "src/workflows/6-Corto_SUMA_PCA.R"
 
 #Correr análisis Loadings
-#PARAM <- "src/workflows/7-Obtencion_de_Cargas.R"
+#PARAM <- "src/workflows/7-Obtencion_de_Cargas_Largo.R"
+#PARAM <- "src/workflows/8-Obtencion_de_Cargas_corto.R"
 
 envg <- env()
 
