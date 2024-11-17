@@ -1,4 +1,4 @@
-# Corrida general del Workflow Baseline
+# Corrida general del Workflow Baseline_Largo
 
 # limpio la memoria
 rm(list = ls(all.names = TRUE)) # remove all objects
@@ -12,8 +12,8 @@ if( !exists("envg") ) envg <- env()  # global environment
 
 envg$EXPENV <- list()
 envg$EXPENV$bucket_dir <- "~/buckets/b1/"
-envg$EXPENV$exp_dir <- "~/buckets/b6/exp-final-Norm_corto/exp/"
-envg$EXPENV$wf_dir <- "~/buckets/b6/exp-final-Norm_corto/flow/"
+envg$EXPENV$exp_dir <- "~/buckets/b7/exp/"
+envg$EXPENV$wf_dir <- "~/buckets/b7/flow/"
 envg$EXPENV$repo_dir <- "~/labo2024v2/"
 envg$EXPENV$datasets_dir <- "~/buckets/b1/datasets/"
 envg$EXPENV$arch_ambiente <- "miAmbiente.yml"
@@ -101,9 +101,6 @@ CA_catastrophe_base <- function( pinputexps, metodo )
 # deterministico, SIN random
 
 
-#MARTIN: Lo comento en el código???, si queremos reducir dimensionalidad, hay que hacer que NO agregue antes. Sino, no la reduce.
-
-
 FEintra_manual_base <- function( pinputexps )
 {
   if( -1 == (param_local <- exp_init())$resultado ) return( 0 ) # linea fija
@@ -136,8 +133,6 @@ DR_drifting_base <- function( pinputexps, metodo)
 #------------------------------------------------------------------------------
 # Feature Engineering Historico  Baseline
 # deterministico, SIN random
-
-#MARTIN - Esto lo dejamos? El lag creo que es útil. Probaría dejando uno que es el default del experimento original.
 
 FEhist_base <- function( pinputexps)
 {
@@ -178,8 +173,6 @@ FEhist_base <- function( pinputexps)
 #  Agregado de variables de Random Forest, corrido desde LightGBM
 #  atencion, parmetros para generar variables, NO para buen modelo
 #  azaroso, utiliza semilla
-
-#MARTIN - Dejar? Sacar?
 
 FErf_attributes_base <- function( pinputexps,
   arbolitos,
@@ -243,8 +236,6 @@ FErf_attributes_base <- function( pinputexps,
 #------------------------------------------------------------------------------
 # Canaritos Asesinos   Baseline
 #  azaroso, utiliza semilla
-
-# MARTIN . Idem acá, los dejamos, los sacamos???
 
 CN_canaritos_asesinos_base <- function( pinputexps, ratio, desvio)
 {
@@ -444,46 +435,6 @@ reducir_dimensionalidad_con_nulos <- function( pinputexps ) {
   
   param_local$meta$script <- "/src/wf-etapas/Dimensionalidad_Script_Exp.R"
   
-  # datasetRed <- data
-  # 
-  # id_cols = datasetRed[, c("numero_de_cliente", "foto_mes", "clase_ternaria") ]
-  # datasetRed[, c("numero_de_cliente", "foto_mes", "clase_ternaria") := NULL]
-  # 
-  # 
-  # # Identificar columnas con valores nulos
-  # #Esto es porque el PCA no funciona bien con nulos. Entonces esas columnas las separamos del análisis y las reincorporaremos luego.
-  # columnas_con_nulos <- names(datasetRed)[sapply(datasetRed, function(col) any(is.na(col)))]
-  # 
-  # # Eliminar temporalmente las columnas con valores nulos
-  # data_sin_nulos <- datasetRed[, !names(datasetRed) %in% columnas_con_nulos]
-  # 
-  # # Verificar que no queden nulos en el dataset sin columnas con nulos
-  # if (any(is.na(data_sin_nulos))) {
-  #   stop("Aún quedan valores nulos en el dataset después de eliminar columnas. Verifica los datos.")
-  # }
-  # 
-  # # Realizar PCA en las columnas sin nulos
-  # pca_result <- prcomp(data_sin_nulos, scale. = TRUE)
-  # 
-  # # Calcular la varianza acumulada y encontrar el número mínimo de componentes necesarios
-  # varianza_acumulada <- cumsum(pca_result$sdev^2) / sum(pca_result$sdev^2)
-  # n_componentes <- which(varianza_acumulada >= varianza_objetivo)[1]
-  # 
-  # # Mantener solo las primeras n_componentes del resultado de PCA
-  # data_reducido <- as.data.frame(pca_result$x[, 1:n_componentes])
-  # 
-  # # Reincorporar las columnas que se quitaron y las que tienen valores nulos al dataset reducido
-  # 
-  # datainter <- cbind(idcols,data_reducido)
-  # 
-  # data_final <- cbind(data_inter, data[, columnas_con_nulos, drop = FALSE])
-  # 
-  # # Imprimir la cantidad de componentes seleccionada y el porcentaje de varianza retenida
-  # cat("Componentes seleccionados:", n_componentes, "\n")
-  # cat("Varianza retenida:", varianza_acumulada[n_componentes] * 100, "%\n")
-  # 
-  # param_local$data_reducido <- data_final
-  
   # Asegurar que el estado del workflow se actualice correctamente
   return(exp_correr_script(param_local))
 }
@@ -499,17 +450,6 @@ sumar_PCA <- function( pinputexps ) {
   return(exp_correr_script(param_local))
 }
 
-Reducir_dim_std <- function( pinputexps ) {
-  # Primero excluimos las variables que no deben formar parte de esta reducción
-  
-  if( -1 == (param_local <- exp_init())$resultado ) return( 0 ) # linea fija
-  
-  param_local$meta$script <- "/src/wf-etapas/Dimensionalidad_Script_Norm_Exp.R"
-  
-  
-  return(exp_correr_script(param_local))
-}
-
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
 
@@ -520,36 +460,7 @@ Reducir_dim_std <- function( pinputexps ) {
 # Que predice 202107 donde conozco la clase
 # y ya genera graficos
 
-wf_septiembre <- function( pnombrewf )
-{
-  param_local <- exp_wf_init( pnombrewf ) # linea fija
-
-  DT_incorporar_dataset_competencia2024()
-  CA_catastrophe_base( metodo="MachineLearning")
-  FEintra_manual_base()
-  DR_drifting_base(metodo="rank_cero_fijo")
-  FEhist_base()
-
-  FErf_attributes_base( arbolitos= 20,
-    hojas_por_arbol= 16,
-    datos_por_hoja= 1000,
-    mtry_ratio= 0.2
-  )
-  #CN_canaritos_asesinos_base(ratio=0.2, desvio=4.0)
-
-  ts9 <- TS_strategy_base9()
-  ht <- HT_tuning_base( bo_iteraciones = 50 )  # iteraciones inteligentes
-
-  fm <- FM_final_models_lightgbm( c(ht, ts9), ranks=c(1), qsemillas=20 )
-  SC_scoring( c(fm, ts9) )
-  KA_evaluate_kaggle()
-
-  return( exp_wf_end() ) # linea fija
-}
-
-#Genero un custom para el experimento que haga la reducción de dimensionalidad luego de agregar variables y demás.
-
-wf_Exp1 <- function( pnombrewf )
+wf_Experimento <- function( pnombrewf )
 {
   param_local <- exp_wf_init( pnombrewf ) # linea fija
   
@@ -567,40 +478,7 @@ wf_Exp1 <- function( pnombrewf )
   #CN_canaritos_asesinos_base(ratio=0.2, desvio=4.0)
   
   #Agrego la reducción
-  reducir_dimensionalidad_con_nulos()
-  
-  
-  ts9 <- TS_strategy_base9()
-  ht <- HT_tuning_base( bo_iteraciones = 50 )  # iteraciones inteligentes
-  
-  fm <- FM_final_models_lightgbm( c(ht, ts9), ranks=c(1), qsemillas=20 )
-  #SC_scoring( c(fm, ts9) )
-  #KA_evaluate_kaggle()
-  
-  return( exp_wf_end() ) # linea fija
-}
-
-#Luego de ver que post random forest, TODAS las columnas terminaban con nulos, haremos la reducción de dimensionalidad sobre el dataset como viene. Y ver qué pasa.
-wf_Exp2 <- function( pnombrewf )
-{
-  param_local <- exp_wf_init( pnombrewf ) # linea fija
-  
-  DT_incorporar_dataset_competencia2024()
-  #CA_catastrophe_base( metodo="MachineLearning")
-  #FEintra_manual_base()
-  #DR_drifting_base(metodo="rank_cero_fijo")
-  #FEhist_base()
-  
-  #FErf_attributes_base( arbolitos= 20,
-  #                      hojas_por_arbol= 16,
-  #                      datos_por_hoja= 1000,
-  #                      mtry_ratio= 0.2
-  #)
-  #CN_canaritos_asesinos_base(ratio=0.2, desvio=4.0)
-  
-  #Agrego la reducción
   #reducir_dimensionalidad_con_nulos()
-  Reducir_dim_std()
   #sumar_PCA()
   
   ts9 <- TS_strategy_base9()
@@ -618,5 +496,5 @@ wf_Exp2 <- function( pnombrewf )
 # Aqui comienza el programa
 
 # llamo al workflow con future = 202109
-wf_Exp2()
+wf_Experimento()
 

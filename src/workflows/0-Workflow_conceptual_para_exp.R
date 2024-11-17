@@ -2,9 +2,28 @@ require("rlang")
 
 # workflow que voy a correr
 #Acá, seleccionar el workflow que corresponda según lo que se quiera correr.
-#PARAM <- "src/Scripts_Experimentos/Experimentos_519_workflow_conc.R"
-PARAM <- "src/workflows/1-Baseline_Corto.R"
-#PARAM <- "src/Scripts_Experimentos/Loadings/Obtencion_de_Cargas.R"
+#Comentar el que no se haga, y descomentar el que se busca correr.
+
+#Correr baseline largo
+PARAM <- "src/workflows/1-Baseline_Largo.R"
+
+#Correr baseline corto
+#PARAM <- "src/workflows/2-Baseline_Corto.R"
+
+#Correr PCA Largo
+#PARAM <- "src/workflows/3-Largo_con_PCA.R"
+
+#Correr PCA Corto
+#PARAM <- "src/workflows/4-Corto_con_PCA.R"
+
+#Correr Suma de PCA Largo
+#PARAM <- "src/workflows/5-Largo_SUMA_PCA.R"
+
+#Correr Suma de PCA Corto
+#PARAM <- "src/workflows/6-Corto_SUMA_PCA.R"
+
+#Correr análisis Loadings
+#PARAM <- "src/workflows/7-Obtencion_de_Cargas.R"
 
 envg <- env()
 
