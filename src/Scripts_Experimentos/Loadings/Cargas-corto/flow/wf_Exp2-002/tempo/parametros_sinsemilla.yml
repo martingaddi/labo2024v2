@@ -1,0 +1,3 @@
+input_exps: DT-0001
+meta:
+  script: /src/wf-etapas/Dimensionalidad_con_Cargas_Script_Exp.R

@@ -1,0 +1,116 @@
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 294430 15.8     692348   37   478244 25.6
+Vcells 510705  3.9    8388608   64  1923777 14.7
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:data.table’:
+
+    between, first, last
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+ETAPA Reducción de dimensionalidad START
+Attaching package: ‘rlang’
+
+The following object is masked from ‘package:data.table’:
+
+    :=
+
+Verificando archivo : parametros.yml 
+Inicio del programa
+lectura del dataset
+Verificando archivo : ./DT-0001/dataset.csv.gz 
+Iniciando lectura del dataset
+Finalizada lectura del dataset
+Dimensiones DatasetRed: 976374 52 
+ [1] "Master_status"               "Master_mfinanciacion_limite"
+ [3] "Master_Fvencimiento"         "Master_msaldototal"         
+ [5] "Master_mlimitecompra"        "Master_fultimo_cierre"      
+ [7] "Master_fechaalta"            "Master_mconsumototal"       
+ [9] "Master_cconsumos"            "Master_mpagominimo"         
+[11] "Visa_status"                 "Visa_mfinanciacion_limite"  
+[13] "Visa_Fvencimiento"           "Visa_msaldototal"           
+[15] "Visa_mlimitecompra"          "Visa_fultimo_cierre"        
+[17] "Visa_fechaalta"              "Visa_mconsumototal"         
+[19] "Visa_cconsumos"              "Visa_mpagominimo"           
+                          internet                       cliente_edad 
+                                 0                                  0 
+                cliente_antiguedad                      mrentabilidad 
+                                 0                                  0 
+              mrentabilidad_annual                        mcomisiones 
+                                 0                                  0 
+                   mactivos_margen                    mpasivos_margen 
+                                 0                                  0 
+                        cproductos                  mcuenta_corriente 
+                                 0                                  0 
+                      mcaja_ahorro           cdescubierto_preacordado 
+                                 0                                  0 
+                    mcuentas_saldo                      ctarjeta_visa 
+                                 0                                  0 
+       ctarjeta_visa_transacciones              mtarjeta_visa_consumo 
+                                 0                                  0 
+                   ctarjeta_master      ctarjeta_master_transacciones 
+                                 0                                  0 
+           mtarjeta_master_consumo              cprestamos_personales 
+                                 0                                  0 
+             mprestamos_personales                       cpayroll_trx 
+                                 0                                  0 
+                          mpayroll mttarjeta_visa_debitos_automaticos 
+                                 0                                  0 
+         ccomisiones_mantenimiento          mcomisiones_mantenimiento 
+                                 0                                  0 
+                 ccomisiones_otras          mtransferencias_recibidas 
+                                 0                                  0 
+         ccallcenter_transacciones                       thomebanking 
+                                 0                                  0 
+        chomebanking_transacciones                       ctrx_quarter 
+                                 0                                  0 
+                     Master_status        Master_mfinanciacion_limite 
+                            106893                             106893 
+               Master_Fvencimiento                 Master_msaldototal 
+                            106893                             106893 
+              Master_mlimitecompra              Master_fultimo_cierre 
+                            106893                             107509 
+                  Master_fechaalta               Master_mconsumototal 
+                            106893                             582589 
+                  Master_cconsumos                 Master_mpagominimo 
+                            582589                             106893 
+                       Visa_status          Visa_mfinanciacion_limite 
+                             40141                              40141 
+                 Visa_Fvencimiento                   Visa_msaldototal 
+                             40141                              40141 
+                Visa_mlimitecompra                Visa_fultimo_cierre 
+                             40141                              40556 
+                    Visa_fechaalta                 Visa_mconsumototal 
+                             40141                             130807 
+                    Visa_cconsumos                   Visa_mpagominimo 
+                            130807                              40141 
+Dimensiones data_sin_nulos: 976374 32 
+Dimensiones pca_result: 
+ [1] 0.1435210 0.2349039 0.3064350 0.3690955 0.4211998 0.4640833 0.5046561
+ [8] 0.5407457 0.5742401 0.6052375 0.6356181 0.6651563 0.6938239 0.7220935
+[15] 0.7487288 0.7743350 0.7972501 0.8188109 0.8392913 0.8586198 0.8771551
+[22] 0.8944052 0.9106009 0.9254542 0.9394642 0.9522932 0.9643790 0.9755878
+[29] 0.9865228 0.9942372 0.9999992 1.0000000
+Dimensiones id_cols: 976374 3 
+Dimensiones data_reducido: 976374 23 
+Dimensiones columnas_con_nulos: 976374 20 
+Componentes seleccionados: 23 
+Varianza retenida: 91.06009 %
+ordenado del dataset
+escritura del dataset
+Iniciando grabado del dataset
+Finalizado grabado del dataset
+grabar metadata
+Fin del programa
+fin del programa
+Verificando archivo : dataset.csv.gz 
+Verificando archivo : dataset_metadata.yml 
+ETAPA  De reducción de dimensionalidad  END

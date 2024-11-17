@@ -1,0 +1,20 @@
+PARAM:
+  input_exps:
+  - HT-0001
+  - TS-0001
+  meta:
+    script: /src/wf-etapas/z2301_FM_final_models_lightgbm.r
+  modelos_rank: 1.0
+  metrica_order: -1.0
+  train:
+    clase01_valor1:
+    - BAJA+2
+    - BAJA+1
+    positivos: BAJA+2
+  qsemillas: 20.0
+time:
+  start: 20241028 135530
+  end: 20241028 135734
+status:
+  modelo_rank: 1.0
+  sem: 20

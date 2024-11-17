@@ -1,0 +1,13 @@
+fecha	id	status	workflow	expw	funcion
+20241114.235903	1	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/DT-0001	DT_incorporar_dataset_competencia2024
+20241114.235916	2	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/CA-0001	CA_catastrophe_base
+20241114.235931	3	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/FEintra-0001	FEintra_manual_base
+20241114.235951	4	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/DR-0001	DR_drifting_base
+20241115.000027	5	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/FEhist-0001	FEhist_base
+20241115.000143	6	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/FErf-0001	FErf_attributes_base
+20241115.000401	7	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/sumar-0001	sumar_PCA
+20241115.000801	8	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/TS-0001	TS_strategy_base9
+20241115.000925	9	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/HT-0001	HT_tuning_base
+20241115.005930	10	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/FM-0001	FM_final_models_lightgbm
+20241115.011428	11	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/SC-0001	SC_scoring
+20241115.011452	12	actual_run	~/buckets/b4/exp-final-sumaPCA_Long/flow/wf_Exp2-001	~/buckets/b4/exp-final-sumaPCA_Long/exp/KA-0001	KA_evaluate_kaggle

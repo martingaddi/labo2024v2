@@ -12,8 +12,8 @@ if( !exists("envg") ) envg <- env()  # global environment
 
 envg$EXPENV <- list()
 envg$EXPENV$bucket_dir <- "~/buckets/b1/"
-envg$EXPENV$exp_dir <- "~/buckets/b4/exp-final-sumaPCA_Long/exp/"
-envg$EXPENV$wf_dir <- "~/buckets/b4/exp-final-sumaPCA_Long/flow/"
+envg$EXPENV$exp_dir <- "~/buckets/b7/A_ver/exp/"
+envg$EXPENV$wf_dir <- "~/buckets/b7/A_ver/flow/"
 envg$EXPENV$repo_dir <- "~/labo2024v2/"
 envg$EXPENV$datasets_dir <- "~/buckets/b1/datasets/"
 envg$EXPENV$arch_ambiente <- "miAmbiente.yml"
@@ -498,6 +498,18 @@ sumar_PCA <- function( pinputexps ) {
   
   return(exp_correr_script(param_local))
 }
+
+Reducir_dim_std <- function( pinputexps ) {
+  # Primero excluimos las variables que no deben formar parte de esta reducción
+  
+  if( -1 == (param_local <- exp_init())$resultado ) return( 0 ) # linea fija
+  
+  param_local$meta$script <- "/src/wf-etapas/Dimensionalidad_Script_Norm_Exp.R"
+  
+  
+  return(exp_correr_script(param_local))
+}
+
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
 
@@ -574,21 +586,22 @@ wf_Exp2 <- function( pnombrewf )
   param_local <- exp_wf_init( pnombrewf ) # linea fija
   
   DT_incorporar_dataset_competencia2024()
-  CA_catastrophe_base( metodo="MachineLearning")
-  FEintra_manual_base()
-  DR_drifting_base(metodo="rank_cero_fijo")
-  FEhist_base()
+  #CA_catastrophe_base( metodo="MachineLearning")
+  #FEintra_manual_base()
+  #DR_drifting_base(metodo="rank_cero_fijo")
+  #FEhist_base()
   
-  FErf_attributes_base( arbolitos= 20,
-                        hojas_por_arbol= 16,
-                        datos_por_hoja= 1000,
-                        mtry_ratio= 0.2
-  )
+  #FErf_attributes_base( arbolitos= 20,
+  #                      hojas_por_arbol= 16,
+  #                      datos_por_hoja= 1000,
+  #                      mtry_ratio= 0.2
+  #)
   #CN_canaritos_asesinos_base(ratio=0.2, desvio=4.0)
   
   #Agrego la reducción
   #reducir_dimensionalidad_con_nulos()
-  sumar_PCA()
+  Reducir_dim_std()
+  #sumar_PCA()
   
   ts9 <- TS_strategy_base9()
   ht <- HT_tuning_base( bo_iteraciones = 50 )  # iteraciones inteligentes

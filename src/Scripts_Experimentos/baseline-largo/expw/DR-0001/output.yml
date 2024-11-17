@@ -1,0 +1,11 @@
+PARAM:
+  input_exps: FEintra-0001
+  meta:
+    script: /src/wf-etapas/z1401_DR_corregir_drifting.r
+  metodo: rank_cero_fijo
+time:
+  start: 20241028 131928
+  end: 20241028 132020
+dataset:
+  ncol: 79
+  nrow: 976374

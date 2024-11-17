@@ -1,0 +1,21 @@
+larch:
+  qty: 1.0
+  archivos:
+    bitacora_run.txt:
+      nom_arch: bitacora_run.txt
+      cols_fijas: []
+      mlflow:
+        contador: 12.0
+        exp_name: /flow
+        run_name: wf_Exp2-001
+        padre_creado: yes
+        padre_activo: no
+mlflow:
+  iniciado: yes
+  conn:
+    tracking_username: labo2024v2
+    tracking_password: constructivism
+    tracking_uri: http://mlflow.rebelare.com/labo2024v2/
+usuario: martin_gaddi
+maquina: desktop-conceptual.c.formidable-bank-437200-g6.internal
+persistir: yes

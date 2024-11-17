@@ -1,0 +1,654 @@
+ETAPA  z2601_KA_evaluate_kaggle.r  INIT
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 294576 15.8     692348   37   478456 25.6
+Vcells 511024  3.9    8388608   64  1923777 14.7
+Loading required package: rlang
+
+Attaching package: ‘rlang’
+
+The following object is masked from ‘package:data.table’:
+
+    :=
+
+Loading required package: rlist
+Loading required package: mlflow
+Loading required package: digest
+ETAPA  z2601_KA_evaluate_kaggle.r  START
+Verificando archivo : parametros.yml 
+Inicio del programa
+lectura tb_future_prediccion.txt
+Verificando archivo : ./SC-0001/tb_future_prediccion.txt 
+lectura tb_predicciones.txt
+Verificando archivo : ./SC-0001/tb_predicciones.txt 
+1 1 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_1 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.439000 
+20241114.144118	1	59	1	968467	1600	4.439	4.439
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_1 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 309kB/s]
+res=  4.419000 
+20241114.144154	1	59	1	968467	1800	4.419	4.419
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_1 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:02<00:00, 166kB/s]
+res=  5.079000 
+20241114.144229	1	59	1	968467	2000	5.079	5.079
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_1 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 209kB/s]
+res=  5.339000 
+20241114.144303	1	59	1	968467	2200	5.339	5.339
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_1 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  5.909000 
+20241114.144338	1	59	1	968467	2400	5.909	5.909
+1 2 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_2 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 208kB/s]
+res=  5.959000 
+20241114.144412	1	59	1	541129	1600	5.959	5.959
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_2 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  5.399000 
+20241114.144447	1	59	1	541129	1800	5.399	5.399
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_2 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 208kB/s]
+res=  4.799000 
+20241114.144522	1	59	1	541129	2000	4.799	4.799
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_2 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  4.289000 
+20241114.144556	1	59	1	541129	2200	4.289	4.289
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_2 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 328kB/s]
+res=  3.709000 
+20241114.144630	1	59	1	541129	2400	3.709	3.709
+1 3 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_3 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 327kB/s]
+res=  6.449000 
+20241114.144704	1	59	1	561529	1600	6.449	6.449
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_3 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 322kB/s]
+res=  6.599000 
+20241114.144738	1	59	1	561529	1800	6.599	6.599
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_3 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 209kB/s]
+res=  5.969000 
+20241114.144813	1	59	1	561529	2000	5.969	5.969
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_3 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 295kB/s]
+res=  6.189000 
+20241114.144847	1	59	1	561529	2200	6.189	6.189
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_3 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  5.689000 
+20241114.144921	1	59	1	561529	2400	5.689	5.689
+1 4 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_4 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 311kB/s]
+res=  5.779000 
+20241114.144955	1	59	1	180539	1600	5.779	5.779
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_4 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 212kB/s]
+res=  5.519000 
+20241114.145030	1	59	1	180539	1800	5.519	5.519
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_4 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 328kB/s]
+res=  6.599000 
+20241114.145104	1	59	1	180539	2000	6.599	6.599
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_4 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 208kB/s]
+res=  6.459000 
+20241114.145139	1	59	1	180539	2200	6.459	6.459
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_4 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 209kB/s]
+res=  6.229000 
+20241114.145213	1	59	1	180539	2400	6.229	6.229
+1 5 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_5 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  6.139000 
+20241114.145248	1	59	1	186551	1600	6.139	6.139
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_5 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 212kB/s]
+res=  5.939000 
+20241114.145323	1	59	1	186551	1800	5.939	5.939
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_5 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 327kB/s]
+res=  5.369000 
+20241114.145357	1	59	1	186551	2000	5.369	5.369
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_5 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  4.909000 
+20241114.145431	1	59	1	186551	2200	4.909	4.909
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_5 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:02<00:00, 175kB/s]
+res=  4.349000 
+20241114.145506	1	59	1	186551	2400	4.349	4.349
+1 6 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_6 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.689000 
+20241114.145541	1	59	1	643043	1600	4.689	4.689
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_6 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 213kB/s]
+res=  4.499000 
+20241114.145615	1	59	1	643043	1800	4.499	4.499
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_6 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  5.049000 
+20241114.145650	1	59	1	643043	2000	5.049	5.049
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_6 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  4.419000 
+20241114.145725	1	59	1	643043	2200	4.419	4.419
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_6 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 205kB/s]
+res=  4.549000 
+20241114.145759	1	59	1	643043	2400	4.549	4.549
+1 7 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_7 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 212kB/s]
+res=  5.799000 
+20241114.145834	1	59	1	934469	1600	5.799	5.799
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_7 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 302kB/s]
+res=  6.079000 
+20241114.145908	1	59	1	934469	1800	6.079	6.079
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_7 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 213kB/s]
+res=  5.999000 
+20241114.145942	1	59	1	934469	2000	5.999	5.999
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_7 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 306kB/s]
+res=  5.809000 
+20241114.150016	1	59	1	934469	2200	5.809	5.809
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_7 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 209kB/s]
+res=  5.979000 
+20241114.150051	1	59	1	934469	2400	5.979	5.979
+1 8 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_8 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  5.729000 
+20241114.150125	1	59	1	433549	1600	5.729	5.729
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_8 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 296kB/s]
+res=  5.489000 
+20241114.150159	1	59	1	433549	1800	5.489	5.489
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_8 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 212kB/s]
+res=  5.299000 
+20241114.150234	1	59	1	433549	2000	5.299	5.299
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_8 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 213kB/s]
+res=  5.149000 
+20241114.150308	1	59	1	433549	2200	5.149	5.149
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_8 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  5.089000 
+20241114.150343	1	59	1	433549	2400	5.089	5.089
+1 9 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_9 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 207kB/s]
+res=  5.399000 
+20241114.150418	1	59	1	596693	1600	5.399	5.399
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_9 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 208kB/s]
+res=  5.249000 
+20241114.150453	1	59	1	596693	1800	5.249	5.249
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_9 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 213kB/s]
+res=  5.489000 
+20241114.150527	1	59	1	596693	2000	5.489	5.489
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_9 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  5.649000 
+20241114.150602	1	59	1	596693	2200	5.649	5.649
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_9 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  5.359000 
+20241114.150656	1	59	1	596693	2400	5.359	5.359
+1 10 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_10 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 208kB/s]
+res=  5.019000 
+20241114.150730	1	59	1	205453	1600	5.019	5.019
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_10 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 209kB/s]
+res=  5.209000 
+20241114.150805	1	59	1	205453	1800	5.209	5.209
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_10 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.589000 
+20241114.150839	1	59	1	205453	2000	4.589	4.589
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_10 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.749000 
+20241114.150914	1	59	1	205453	2200	4.749	4.749
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_10 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:02<00:00, 183kB/s]
+res=  5.489000 
+20241114.150948	1	59	1	205453	2400	5.489	5.489
+1 11 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_11 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 213kB/s]
+res=  2.879000 
+20241114.151023	1	59	1	217979	1600	2.879	2.879
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_11 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.269000 
+20241114.151058	1	59	1	217979	1800	4.269	4.269
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_11 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 205kB/s]
+res=  4.519000 
+20241114.151132	1	59	1	217979	2000	4.519	4.519
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_11 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 212kB/s]
+res=  5.169000 
+20241114.151207	1	59	1	217979	2200	5.169	5.169
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_11 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 207kB/s]
+res=  4.569000 
+20241114.151242	1	59	1	217979	2400	4.569	4.569
+1 12 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_12 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  3.429000 
+20241114.151316	1	59	1	808937	1600	3.429	3.429
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_12 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.389000 
+20241114.151351	1	59	1	808937	1800	4.389	4.389
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_12 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.629000 
+20241114.151425	1	59	1	808937	2000	4.629	4.629
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_12 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 212kB/s]
+res=  4.839000 
+20241114.151500	1	59	1	808937	2200	4.839	4.839
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_12 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 209kB/s]
+res=  5.819000 
+20241114.151534	1	59	1	808937	2400	5.819	5.819
+1 13 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_13 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 322kB/s]
+res=  5.609000 
+20241114.151609	1	59	1	628757	1600	5.609	5.609
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_13 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  5.319000 
+20241114.151643	1	59	1	628757	1800	5.319	5.319
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_13 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 209kB/s]
+res=  4.769000 
+20241114.151718	1	59	1	628757	2000	4.769	4.769
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_13 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 204kB/s]
+res=  4.699000 
+20241114.151752	1	59	1	628757	2200	4.699	4.699
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_13 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.919000 
+20241114.151827	1	59	1	628757	2400	4.919	4.919
+1 14 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_14 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  6.419000 
+20241114.151902	1	59	1	137353	1600	6.419	6.419
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_14 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 212kB/s]
+res=  5.889000 
+20241114.151936	1	59	1	137353	1800	5.889	5.889
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_14 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 199kB/s]
+res=  5.449000 
+20241114.152011	1	59	1	137353	2000	5.449	5.449
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_14 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.759000 
+20241114.152045	1	59	1	137353	2200	4.759	4.759
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_14 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  4.919000 
+20241114.152120	1	59	1	137353	2400	4.919	4.919
+1 15 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_15 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  5.189000 
+20241114.152154	1	59	1	564391	1600	5.189	5.189
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_15 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  5.739000 
+20241114.152229	1	59	1	564391	1800	5.739	5.739
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_15 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 209kB/s]
+res=  6.319000 
+20241114.152304	1	59	1	564391	2000	6.319	6.319
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_15 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 209kB/s]
+res=  5.759000 
+20241114.152338	1	59	1	564391	2200	5.759	5.759
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_15 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 209kB/s]
+res=  5.179000 
+20241114.152413	1	59	1	564391	2400	5.179	5.179
+1 16 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_16 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 326kB/s]
+res=  4.859000 
+20241114.152447	1	59	1	291077	1600	4.859	4.859
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_16 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  4.769000 
+20241114.152521	1	59	1	291077	1800	4.769	4.769
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_16 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 320kB/s]
+res=  4.549000 
+20241114.152555	1	59	1	291077	2000	4.549	4.549
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_16 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  4.809000 
+20241114.152630	1	59	1	291077	2200	4.809	4.809
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_16 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 207kB/s]
+res=  5.399000 
+20241114.152704	1	59	1	291077	2400	5.399	5.399
+1 17 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_17 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 327kB/s]
+res=  4.529000 
+20241114.152738	1	59	1	340451	1600	4.529	4.529
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_17 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 324kB/s]
+res=  4.299000 
+20241114.152812	1	59	1	340451	1800	4.299	4.299
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_17 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 328kB/s]
+res=  4.139000 
+20241114.152846	1	59	1	340451	2000	4.139	4.139
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_17 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  3.509000 
+20241114.152921	1	59	1	340451	2200	3.509	3.509
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_17 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  3.769000 
+20241114.152956	1	59	1	340451	2400	3.769	3.769
+1 18 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_18 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  5.469000 
+20241114.153030	1	59	1	692641	1600	5.469	5.469
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_18 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 206kB/s]
+res=  4.819000 
+20241114.153105	1	59	1	692641	1800	4.819	4.819
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_18 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.539000 
+20241114.153139	1	59	1	692641	2000	4.539	4.539
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_18 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 212kB/s]
+res=  5.209000 
+20241114.153214	1	59	1	692641	2200	5.209	5.209
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_18 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  5.109000 
+20241114.153248	1	59	1	692641	2400	5.109	5.109
+1 19 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_19 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 206kB/s]
+res=  6.139000 
+20241114.153323	1	59	1	974747	1600	6.139	6.139
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_19 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:02<00:00, 165kB/s]
+res=  5.639000 
+20241114.153358	1	59	1	974747	1800	5.639	5.639
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_19 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  4.929000 
+20241114.153433	1	59	1	974747	2000	4.929	4.929
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_19 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 213kB/s]
+res=  4.359000 
+20241114.153507	1	59	1	974747	2200	4.359	4.359
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_19 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 211kB/s]
+res=  5.329000 
+20241114.153542	1	59	1	974747	2400	5.329	5.329
+1 20 
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_20 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 327kB/s]
+res=  6.509000 
+20241114.153615	1	59	1	578999	1600	6.509	6.509
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_20 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 214kB/s]
+res=  5.889000 
+20241114.153649	1	59	1	578999	1800	5.889	5.889
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_20 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 212kB/s]
+res=  5.659000 
+20241114.153722	1	59	1	578999	2000	5.659	5.659
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_20 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 210kB/s]
+res=  5.819000 
+20241114.153756	1	59	1	578999	2200	5.819	5.819
+write prediccion Kaggle
+Columnas del dataset:  numero_de_cliente m_1_20 Predicted 
+written prediccion Kaggle
+  0%|          | 0.00/368k [00:00<?, ?B/s]100%|██████████| 368k/368k [00:01<00:00, 328kB/s]
+res=  5.229000 
+20241114.153829	1	59	1	578999	2400	5.229	5.229
+20241114.153831	1	59	20	-1	1600	5.3215	5.3215
+20241114.153832	1	59	20	-1	1800	5.271	5.271
+20241114.153833	1	59	20	-1	2000	5.187	5.187
+20241114.153834	1	59	20	-1	2200	5.0945	5.0945
+20241114.153835	1	59	20	-1	2400	5.1295	5.1295
+Warning message:
+`as_integer()` is deprecated as of rlang 0.4.0
+Please use `vctrs::vec_cast()` instead.
+This warning is displayed once every 8 hours. 
+fin del programa
+Verificando archivo : tb_ganancias.txt 
+ETAPA  z2601_KA_evaluate_kaggle.r  END

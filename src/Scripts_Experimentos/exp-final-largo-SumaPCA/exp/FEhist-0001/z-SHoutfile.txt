@@ -1,0 +1,31 @@
+ETAPA  z1501_FE_historia.r  INIT
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 294576 15.8     692348   37   478456 25.6
+Vcells 511024  3.9    8388608   64  1923777 14.7
+
+Attaching package: ‘rlang’
+
+The following object is masked from ‘package:data.table’:
+
+    :=
+
+ETAPA  z1501_FE_historia.r  START
+Verificando archivo : parametros.yml 
+Inicio del programa
+lectura del dataset
+Verificando archivo : ./DR-0001/dataset.csv.gz 
+Iniciando lectura del dataset
+Finalizada lectura del dataset
+[1] "clase_ternaria"
+Inicio lag1
+Fin lag1
+ordenado dataset
+grabado dataset
+Iniciando grabado del dataset
+Finalizado grabado del dataset
+grabado metadata
+Fin del programa
+fin del programa
+Verificando archivo : dataset.csv.gz 
+Verificando archivo : dataset_metadata.yml 
+ETAPA  z1501_FE_historia.r  END

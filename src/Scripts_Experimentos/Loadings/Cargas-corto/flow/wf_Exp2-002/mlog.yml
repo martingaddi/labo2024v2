@@ -1,0 +1,72 @@
+larch:
+  qty: 1.0
+  archivos:
+    bitacora_run.txt:
+      nom_arch: bitacora_run.txt
+      cols_fijas: []
+      mlflow:
+        contador: 2.0
+        exp_name: /flow
+        run_name: wf_Exp2-002
+        padre_creado: yes
+        exp_id: '3'
+        padre_exp:
+          run_uuid: 4deaafb7675d41e6ada7b66b8867610e
+          experiment_id: '3'
+          run_name: classy-smelt-664
+          user_id: martin_gaddi
+          status: RUNNING
+          start_time: 1.7316232e+09
+          artifact_uri: mlflow-artifacts:/3/4deaafb7675d41e6ada7b66b8867610e/artifacts
+          lifecycle_stage: active
+          run_id: 4deaafb7675d41e6ada7b66b8867610e
+          end_time: .na
+          metrics: .na
+          params: .na
+          tags:
+          - key:
+            - mlflow.user
+            - mlflow.source.name
+            - mlflow.source.type
+            - mlflow.runName
+            value:
+            - martin_gaddi
+            - /home/martin_gaddi/labo2024v2/src/workflows/Obtencion_de_Cargas.R
+            - LOCAL
+            - classy-smelt-664
+        padre_activo: no
+        hijo_exp:
+          run_uuid: 5112da2861a646cdb12ec5e35f454ff9
+          experiment_id: '3'
+          run_name: capable-ram-875
+          user_id: martin_gaddi
+          status: RUNNING
+          start_time: 1.7316232e+09
+          artifact_uri: mlflow-artifacts:/3/5112da2861a646cdb12ec5e35f454ff9/artifacts
+          lifecycle_stage: active
+          run_id: 5112da2861a646cdb12ec5e35f454ff9
+          end_time: .na
+          metrics: .na
+          params: .na
+          tags:
+          - key:
+            - mlflow.user
+            - mlflow.source.name
+            - mlflow.source.type
+            - mlflow.parentRunId
+            - mlflow.runName
+            value:
+            - martin_gaddi
+            - /home/martin_gaddi/labo2024v2/src/workflows/Obtencion_de_Cargas.R
+            - LOCAL
+            - 4deaafb7675d41e6ada7b66b8867610e
+            - capable-ram-875
+mlflow:
+  iniciado: yes
+  conn:
+    tracking_username: labo2024v2
+    tracking_password: constructivism
+    tracking_uri: http://mlflow.rebelare.com/labo2024v2/
+usuario: martin_gaddi
+maquina: desktop-conceptual.c.formidable-bank-437200-g6.internal
+persistir: yes

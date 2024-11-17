@@ -1,0 +1,8 @@
+fecha	id	status	workflow	expw	funcion
+20241114.142922	1	previo_end	~/buckets/b4/exp-final-sumaPCA/flow/wf_Exp2-003	~/buckets/b4/exp-final-sumaPCA/exp/DT-0001	DT_incorporar_dataset_competencia2024
+20241114.142924	2	previo_end	~/buckets/b4/exp-final-sumaPCA/flow/wf_Exp2-003	~/buckets/b4/exp-final-sumaPCA/exp/sumar-0002	sumar_PCA
+20241114.142926	3	previo_end	~/buckets/b4/exp-final-sumaPCA/flow/wf_Exp2-003	~/buckets/b4/exp-final-sumaPCA/exp/TS-0002	TS_strategy_base9
+20241114.142927	4	actual_run	~/buckets/b4/exp-final-sumaPCA/flow/wf_Exp2-003	~/buckets/b4/exp-final-sumaPCA/exp/HT-0001	HT_tuning_base
+20241114.144025	5	actual_run	~/buckets/b4/exp-final-sumaPCA/flow/wf_Exp2-003	~/buckets/b4/exp-final-sumaPCA/exp/FM-0001	FM_final_models_lightgbm
+20241114.144036	6	actual_run	~/buckets/b4/exp-final-sumaPCA/flow/wf_Exp2-003	~/buckets/b4/exp-final-sumaPCA/exp/SC-0001	SC_scoring
+20241114.144042	7	actual_run	~/buckets/b4/exp-final-sumaPCA/flow/wf_Exp2-003	~/buckets/b4/exp-final-sumaPCA/exp/KA-0001	KA_evaluate_kaggle

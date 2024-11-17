@@ -1,0 +1,165 @@
+ETAPA  z1311_FE_rfatributes.r  INIT
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 294576 15.8     692348   37   478456 25.6
+Vcells 511024  3.9    8388608   64  1923777 14.7
+
+Attaching package: ‘rlang’
+
+The following object is masked from ‘package:data.table’:
+
+    :=
+
+ETAPA  z1311_FE_rfatributes.r  START
+Verificando archivo : parametros.yml 
+Inicio del programa
+lectura dataset
+Verificando archivo : ./FEhist-0001/dataset.csv.gz 
+Iniciando lectura del dataset
+Finalizada lectura del dataset
+ordenado dataset
+inicio AgregaVarRandomForest()
+Fin construccion RandomForest
+periodo =  201901 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201902 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201903 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201904 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201905 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201906 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201907 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201908 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201909 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201910 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201911 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  201912 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202001 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202002 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202003 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202004 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202005 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202006 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202007 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202008 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202009 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202010 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202011 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202012 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202101 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202102 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202103 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202104 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202105 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202106 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202107 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202108 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+periodo =  202109 
+Inicio prediccion
+Fin prediccion
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  
+            used   (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells   1739182   92.9    2880628  153.9   2880628  153.9
+Vcells 432839100 3302.4  692472404 5283.2 692464658 5283.1
+grabado dataset
+Iniciando grabado del dataset
+Finalizado grabado del dataset
+grabado metadata
+Fin del programa
+fin del programa
+Verificando archivo : dataset.csv.gz 
+Verificando archivo : dataset_metadata.yml 
+ETAPA  z1311_FE_rfatributes.r  END

@@ -1,0 +1,22 @@
+larch:
+  qty: 1.0
+  archivos:
+    ganancias_log.txt:
+      nom_arch: ganancias_log.txt
+      cols_fijas:
+        expw: /home/martin_gaddi/buckets/b3/exp-final-corto/exp/KA-0001
+      mlflow:
+        contador: 105.0
+        exp_name: /futu-079b6d
+        run_name: KA-0001
+        padre_creado: yes
+        padre_activo: no
+mlflow:
+  iniciado: yes
+  conn:
+    tracking_username: labo2024v2
+    tracking_password: constructivism
+    tracking_uri: http://mlflow.rebelare.com/labo2024v2/
+usuario: martin_gaddi
+maquina: desktop-conceptual.c.formidable-bank-437200-g6.internal
+persistir: yes

@@ -1,0 +1,11 @@
+PARAM:
+  semilla: 999721
+  input_exps: FErf-0001
+  meta:
+    script: /src/wf-etapas/SUMA_Dimensionalidad_Script_Exp.R
+time:
+  start: 20241115 000405
+  end: 20241115 000800
+dataset:
+  ncol: 692
+  nrow: 976374

@@ -1,0 +1,60 @@
+PARAM:
+  input_exps: FErf-0001
+  meta:
+    script: /src/wf-etapas/z2101_TS_training_strategy.r
+  future: 202109.0
+  final_train:
+    undersampling: 1.0
+    clase_minoritaria:
+    - BAJA+1
+    - BAJA+2
+    training:
+    - 202107.0
+    - 202106.0
+    - 202105.0
+    - 202104.0
+    - 202103.0
+    - 202102.0
+    - 202101.0
+    - 202012.0
+    - 202011.0
+  train:
+    training:
+    - 202105.0
+    - 202104.0
+    - 202103.0
+    - 202102.0
+    - 202101.0
+    - 202012.0
+    - 202011.0
+    - 202010.0
+    - 202009.0
+    validation: 202106.0
+    testing: 202107.0
+    undersampling: 0.2
+    clase_minoritaria:
+    - BAJA+1
+    - BAJA+2
+time:
+  start: 20241028 132650
+  end: 20241028 132818
+dataset_train:
+  ncol: 632
+  nrow: 60505
+  periodos: 9
+dataset_validate:
+  ncol: 632
+  nrow: 32990
+  periodos: 1
+dataset_test:
+  ncol: 632
+  nrow: 33053
+  periodos: 1
+dataset_future:
+  ncol: 632
+  nrow: 33094
+  periodos: 1
+dataset_finaltrain:
+  ncol: 632
+  nrow: 0
+  periodos: 0

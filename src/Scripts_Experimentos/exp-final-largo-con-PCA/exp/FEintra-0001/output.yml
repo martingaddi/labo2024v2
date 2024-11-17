@@ -1,0 +1,10 @@
+PARAM:
+  input_exps: CA-0001
+  meta:
+    script: /src/wf-etapas/z1301_FE_intrames_manual.r
+time:
+  start: 20241110 201126
+  end: 20241110 201138
+dataset:
+  ncol: 79
+  nrow: 976374

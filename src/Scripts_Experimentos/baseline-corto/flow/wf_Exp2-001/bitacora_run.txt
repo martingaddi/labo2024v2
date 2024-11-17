@@ -1,0 +1,7 @@
+fecha	id	status	workflow	expw	funcion
+20241113.001126	1	actual_run	~/buckets/b3/exp-final-corto-sinred/flow/wf_Exp2-001	~/buckets/b3/exp-final-corto-sinred/exp/DT-0001	DT_incorporar_dataset_competencia2024
+20241113.001225	2	actual_run	~/buckets/b3/exp-final-corto-sinred/flow/wf_Exp2-001	~/buckets/b3/exp-final-corto-sinred/exp/TS-0001	TS_strategy_base9
+20241113.001311	3	actual_run	~/buckets/b3/exp-final-corto-sinred/flow/wf_Exp2-001	~/buckets/b3/exp-final-corto-sinred/exp/HT-0001	HT_tuning_base
+20241113.010732	4	actual_run	~/buckets/b3/exp-final-corto-sinred/flow/wf_Exp2-001	~/buckets/b3/exp-final-corto-sinred/exp/FM-0001	FM_final_models_lightgbm
+20241113.010826	5	actual_run	~/buckets/b3/exp-final-corto-sinred/flow/wf_Exp2-001	~/buckets/b3/exp-final-corto-sinred/exp/SC-0001	SC_scoring
+20241113.010910	6	actual_run	~/buckets/b3/exp-final-corto-sinred/flow/wf_Exp2-001	~/buckets/b3/exp-final-corto-sinred/exp/KA-0001	KA_evaluate_kaggle

@@ -1,0 +1,37 @@
+semilla: 999721
+input_exps: sumar-0002
+meta:
+  script: /src/wf-etapas/z2101_TS_training_strategy.r
+future: 202109.0
+final_train:
+  undersampling: 1.0
+  clase_minoritaria:
+  - BAJA+1
+  - BAJA+2
+  training:
+  - 202107.0
+  - 202106.0
+  - 202105.0
+  - 202104.0
+  - 202103.0
+  - 202102.0
+  - 202101.0
+  - 202012.0
+  - 202011.0
+train:
+  training:
+  - 202105.0
+  - 202104.0
+  - 202103.0
+  - 202102.0
+  - 202101.0
+  - 202012.0
+  - 202011.0
+  - 202010.0
+  - 202009.0
+  validation: 202106.0
+  testing: 202107.0
+  undersampling: 0.2
+  clase_minoritaria:
+  - BAJA+1
+  - BAJA+2

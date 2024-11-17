@@ -1,0 +1,12 @@
+fecha	id	status	workflow	expw	funcion
+20241029.224056	1	previo_end	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/DT-0001	DT_incorporar_dataset_competencia2024
+20241029.224110	2	previo_end	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/CA-0001	CA_catastrophe_base
+20241029.224121	3	previo_end	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/FEintra-0001	FEintra_manual_base
+20241029.224132	4	previo_end	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/DR-0001	DR_drifting_base
+20241029.224144	5	previo_end	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/FEhist-0001	FEhist_base
+20241029.224155	6	previo_end	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/FErf-0001	FErf_attributes_base
+20241029.224206	7	previo_end	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/TS-0001	TS_strategy_base9
+20241029.224218	8	previo_end	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/HT-0001	HT_tuning_base
+20241029.224229	9	previo_end	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/FM-0001	FM_final_models_lightgbm
+20241029.224240	10	previo_end	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/SC-0001	SC_scoring
+20241029.224256	11	actual_run	~/buckets/b1/flow/wf_septiembre-002	~/buckets/b1/expw/KA-0002	KA_evaluate_kaggle

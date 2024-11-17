@@ -1,0 +1,4 @@
+semilla: 999721
+input_exps: DT-0001
+meta:
+  script: /src/wf-etapas/Dimensionalidad_Script_Exp.R

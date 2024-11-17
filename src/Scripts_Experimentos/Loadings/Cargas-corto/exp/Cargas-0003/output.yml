@@ -1,0 +1,11 @@
+PARAM:
+  semilla: 999721
+  input_exps: DT-0001
+  meta:
+    script: /src/wf-etapas/Dimensionalidad_con_Cargas_Script_Exp.R
+time:
+  start: 20241114 222848
+  end: 20241114 222956
+dataset:
+  ncol: 46
+  nrow: 976374

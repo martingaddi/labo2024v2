@@ -1,0 +1,79 @@
+ETAPA  z2401_SC_scoring.r  INIT
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 294576 15.8     692348   37   478456 25.6
+Vcells 511024  3.9    8388608   64  1923777 14.7
+
+Attaching package: ‘rlang’
+
+The following object is masked from ‘package:data.table’:
+
+    :=
+
+ETAPA  z2401_SC_scoring.r  START
+Verificando archivo : parametros.yml 
+Inicio del programa
+Verificando archivo : ./FM-0001/tb_modelos.txt 
+lectura dataset_future.csv.gz
+
+modelo_rank:  1 , isem:  1 
+creo predict
+
+modelo_rank:  1 , isem:  2 
+creo predict
+
+modelo_rank:  1 , isem:  3 
+creo predict
+
+modelo_rank:  1 , isem:  4 
+creo predict
+
+modelo_rank:  1 , isem:  5 
+creo predict
+
+modelo_rank:  1 , isem:  6 
+creo predict
+
+modelo_rank:  1 , isem:  7 
+creo predict
+
+modelo_rank:  1 , isem:  8 
+creo predict
+
+modelo_rank:  1 , isem:  9 
+creo predict
+
+modelo_rank:  1 , isem:  10 
+creo predict
+
+modelo_rank:  1 , isem:  11 
+creo predict
+
+modelo_rank:  1 , isem:  12 
+creo predict
+
+modelo_rank:  1 , isem:  13 
+creo predict
+
+modelo_rank:  1 , isem:  14 
+creo predict
+
+modelo_rank:  1 , isem:  15 
+creo predict
+
+modelo_rank:  1 , isem:  16 
+creo predict
+
+modelo_rank:  1 , isem:  17 
+creo predict
+
+modelo_rank:  1 , isem:  18 
+creo predict
+
+modelo_rank:  1 , isem:  19 
+creo predict
+
+modelo_rank:  1 , isem:  20 
+creo predict
+grabar metadata
+fin del programa
+ETAPA  z2401_SC_scoring.r  END

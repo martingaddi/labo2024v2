@@ -1,0 +1,42 @@
+ETAPA  z2301_FM_final_models_lightgbm.r  INIT
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 294576 15.8     692348   37   478456 25.6
+Vcells 511024  3.9    8388608   64  1923777 14.7
+
+Attaching package: ‘rlang’
+
+The following object is masked from ‘package:data.table’:
+
+    :=
+
+ETAPA  z2301_FM_final_models_lightgbm.r  START
+Verificando archivo : parametros.yml 
+Inicio del programa
+Verificando archivo : ./HT-0001/BO_log.txt 
+lectura dataset_train_final.csv.gz
+Verificando archivo : ./TS-0001/dataset_train_final.csv.gz 
+
+modelo_rank:  1 , semillas: creo lgb.Dataset
+1  
+entrenando modelo =  1   . ...Fin.2  
+entrenando modelo =  2   . ...Fin.3  
+entrenando modelo =  3   . ...Fin.4  
+entrenando modelo =  4   . ...Fin.5  
+entrenando modelo =  5   . ...Fin.6  
+entrenando modelo =  6   . ...Fin.7  
+entrenando modelo =  7   . ...Fin.8  
+entrenando modelo =  8   . ...Fin.9  
+entrenando modelo =  9   . ...Fin.10  
+entrenando modelo =  10   . ...Fin.11  
+entrenando modelo =  11   . ...Fin.12  
+entrenando modelo =  12   . ...Fin.13  
+entrenando modelo =  13   . ...Fin.14  
+entrenando modelo =  14   . ...Fin.15  
+entrenando modelo =  15   . ...Fin.16  
+entrenando modelo =  16   . ...Fin.17  
+entrenando modelo =  17   . ...Fin.18  
+entrenando modelo =  18   . ...Fin.19  
+entrenando modelo =  19   . ...Fin.20  
+entrenando modelo =  20   . ...Fin.grabar metadata
+fin del programa
+ETAPA  z2301_FM_final_models_lightgbm.r  END

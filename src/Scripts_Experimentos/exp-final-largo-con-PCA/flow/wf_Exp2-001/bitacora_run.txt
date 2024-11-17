@@ -1,0 +1,13 @@
+fecha	id	status	workflow	expw	funcion
+20241110.200852	1	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/DT-0001	DT_incorporar_dataset_competencia2024
+20241110.200951	2	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/CA-0001	CA_catastrophe_base
+20241110.201046	3	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/FEintra-0001	FEintra_manual_base
+20241110.201138	4	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/DR-0001	DR_drifting_base
+20241110.201244	5	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/FEhist-0001	FEhist_base
+20241110.201420	6	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/FErf-0001	FErf_attributes_base
+20241110.201636	7	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/reducir-0001	reducir_dimensionalidad_con_nulos
+20241110.201955	8	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/TS-0001	TS_strategy_base9
+20241110.202135	9	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/HT-0001	HT_tuning_base
+20241110.212642	10	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/FM-0001	FM_final_models_lightgbm
+20241110.212827	11	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/SC-0001	SC_scoring
+20241110.212914	12	actual_run	~/buckets/b2/exp-final-largo/flow/wf_Exp2-001	~/buckets/b2/exp-final-largo/exp/KA-0001	KA_evaluate_kaggle

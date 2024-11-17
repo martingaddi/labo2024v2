@@ -1,0 +1,2 @@
+timestamp	event
+20241028 135845	SH_START

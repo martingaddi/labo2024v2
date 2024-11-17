@@ -1,0 +1,72 @@
+larch:
+  qty: 1.0
+  archivos:
+    bitacora_run.txt:
+      nom_arch: bitacora_run.txt
+      cols_fijas: []
+      mlflow:
+        contador: 7.0
+        exp_name: /flow
+        run_name: wf_Exp2-003
+        padre_creado: yes
+        exp_id: '3'
+        padre_exp:
+          run_uuid: fc9ce7d11af24c4fa67feaf100c47972
+          experiment_id: '3'
+          run_name: salty-trout-370
+          user_id: martin_gaddi
+          status: RUNNING
+          start_time: 1.7315946e+09
+          artifact_uri: mlflow-artifacts:/3/fc9ce7d11af24c4fa67feaf100c47972/artifacts
+          lifecycle_stage: active
+          run_id: fc9ce7d11af24c4fa67feaf100c47972
+          end_time: .na
+          metrics: .na
+          params: .na
+          tags:
+          - key:
+            - mlflow.user
+            - mlflow.source.name
+            - mlflow.source.type
+            - mlflow.runName
+            value:
+            - martin_gaddi
+            - <console>
+            - LOCAL
+            - salty-trout-370
+        padre_activo: no
+        hijo_exp:
+          run_uuid: 689ac11c4e0543549d3694738c0848c7
+          experiment_id: '3'
+          run_name: marvelous-fly-417
+          user_id: martin_gaddi
+          status: RUNNING
+          start_time: 1.7315952e+09
+          artifact_uri: mlflow-artifacts:/3/689ac11c4e0543549d3694738c0848c7/artifacts
+          lifecycle_stage: active
+          run_id: 689ac11c4e0543549d3694738c0848c7
+          end_time: .na
+          metrics: .na
+          params: .na
+          tags:
+          - key:
+            - mlflow.user
+            - mlflow.source.name
+            - mlflow.source.type
+            - mlflow.parentRunId
+            - mlflow.runName
+            value:
+            - martin_gaddi
+            - <console>
+            - LOCAL
+            - fc9ce7d11af24c4fa67feaf100c47972
+            - marvelous-fly-417
+mlflow:
+  iniciado: yes
+  conn:
+    tracking_username: labo2024v2
+    tracking_password: constructivism
+    tracking_uri: http://mlflow.rebelare.com/labo2024v2/
+usuario: martin_gaddi
+maquina: desktop-conceptual.c.formidable-bank-437200-g6.internal
+persistir: yes

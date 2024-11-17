@@ -1,0 +1,29 @@
+ETAPA  z1101_DT_incorporar_dataset.r  INIT
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 294576 15.8     692348   37   478456 25.6
+Vcells 511024  3.9    8388608   64  1923777 14.7
+
+Attaching package: ‘rlang’
+
+The following object is masked from ‘package:data.table’:
+
+    :=
+
+ETAPA  z1101_DT_incorporar_dataset.r  START
+Verificando archivo : parametros.yml 
+Inicio del programa
+lectura del dataset
+Verificando archivo : ~/datasets/conceptual_competencia_2024.csv.gz 
+Iniciando lectura del archivo
+Finalizada lectura del archivo
+verificacion de nombres de campo
+verificacion de primary key
+ordeno el dataset
+grabo el dataset
+Iniciando grabado del dataset
+Finalizado grabado del dataset
+grabo metadata
+fin del programa
+Verificando archivo : dataset.csv.gz 
+Verificando archivo : dataset_metadata.yml 
+ETAPA  z1101_DT_incorporar_dataset.r  END

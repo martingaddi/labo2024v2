@@ -1,0 +1,30 @@
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 294430 15.8     692348   37   478244 25.6
+Vcells 510705  3.9    8388608   64  1923777 14.7
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:data.table’:
+
+    between, first, last
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+ETAPA Reducción de dimensionalidad START
+Attaching package: ‘rlang’
+
+The following object is masked from ‘package:data.table’:
+
+    :=
+
+Verificando archivo : parametros.yml 
+Inicio del programa
+lectura del dataset
+Verificando archivo : ./DT-0001/dataset.csv.gz 
+Iniciando lectura del dataset

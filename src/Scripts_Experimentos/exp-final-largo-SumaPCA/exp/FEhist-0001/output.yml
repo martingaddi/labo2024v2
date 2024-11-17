@@ -1,0 +1,37 @@
+PARAM:
+  input_exps: DR-0001
+  meta:
+    script: /src/wf-etapas/z1501_FE_historia.r
+  lag1: yes
+  lag2: no
+  lag3: no
+  Tendencias1:
+    run: yes
+    ventana: 6.0
+    tendencia: yes
+    minimo: no
+    maximo: no
+    promedio: no
+    ratioavg: no
+    ratiomax: no
+  Tendencias2:
+    run: no
+    ventana: 12.0
+    tendencia: no
+    minimo: no
+    maximo: no
+    promedio: no
+    ratioavg: no
+    ratiomax: no
+time:
+  start: 20241115 000033
+  end: 20241115 000142
+lag1:
+  ncol_antes: 79
+  ncol_despues: 231
+TendenciasYmuchomas1:
+  ncol_antes: 231
+  ncol_despues: 307
+dataset:
+  ncol: 307
+  nrow: 976374

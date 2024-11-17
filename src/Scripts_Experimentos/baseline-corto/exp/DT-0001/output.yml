@@ -1,0 +1,16 @@
+PARAM:
+  meta:
+    script: /src/wf-etapas/z1101_DT_incorporar_dataset.r
+  archivo_absoluto: ~/datasets/conceptual_competencia_2024.csv.gz
+  primarykey:
+  - numero_de_cliente
+  - foto_mes
+  entity_id: numero_de_cliente
+  periodo: foto_mes
+  clase: clase_ternaria
+time:
+  start: 20241113 001216
+  end: 20241113 001224
+dataset:
+  ncol: 55
+  nrow: 976374

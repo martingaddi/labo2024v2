@@ -1,0 +1,12 @@
+PARAM:
+  input_exps:
+  - FM-0001
+  - TS-0001
+  meta:
+    script: /src/wf-etapas/z2401_SC_scoring_lightgbm.r
+time:
+  start: 20241113 010907
+  end: 20241113 010910
+status:
+  modelo_rank: 1
+  modelo_isem: 20

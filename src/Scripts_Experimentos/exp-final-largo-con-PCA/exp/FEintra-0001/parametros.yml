@@ -1,0 +1,3 @@
+input_exps: CA-0001
+meta:
+  script: /src/wf-etapas/z1301_FE_intrames_manual.r

@@ -1,0 +1,73 @@
+larch:
+  qty: 1.0
+  archivos:
+    BO_log.txt:
+      nom_arch: BO_log.txt
+      cols_fijas:
+        expw: /home/martin_gaddi/buckets/b4/exp-final-sumaPCA_Long/exp/HT-0001
+      mlflow:
+        contador: 66.0
+        exp_name: /test-3a20da
+        run_name: HT-0001
+        padre_creado: yes
+        exp_id: '6'
+        padre_exp:
+          run_uuid: 557ed821463c46b98c71dda4f2157c94
+          experiment_id: '6'
+          run_name: loud-hen-717
+          user_id: martin_gaddi
+          status: RUNNING
+          start_time: 1.7316294e+09
+          artifact_uri: mlflow-artifacts:/6/557ed821463c46b98c71dda4f2157c94/artifacts
+          lifecycle_stage: active
+          run_id: 557ed821463c46b98c71dda4f2157c94
+          end_time: .na
+          metrics: .na
+          params: .na
+          tags:
+          - key:
+            - mlflow.user
+            - mlflow.source.name
+            - mlflow.source.type
+            - mlflow.runName
+            value:
+            - martin_gaddi
+            - z2201_HT_lightgbm_gan.r
+            - LOCAL
+            - loud-hen-717
+        padre_activo: no
+        hijo_exp:
+          run_uuid: 3d289be0b12444bd83ffe61ab8a19cd7
+          experiment_id: '6'
+          run_name: capricious-frog-469
+          user_id: martin_gaddi
+          status: RUNNING
+          start_time: 1.7316324e+09
+          artifact_uri: mlflow-artifacts:/6/3d289be0b12444bd83ffe61ab8a19cd7/artifacts
+          lifecycle_stage: active
+          run_id: 3d289be0b12444bd83ffe61ab8a19cd7
+          end_time: .na
+          metrics: .na
+          params: .na
+          tags:
+          - key:
+            - mlflow.user
+            - mlflow.source.name
+            - mlflow.source.type
+            - mlflow.parentRunId
+            - mlflow.runName
+            value:
+            - martin_gaddi
+            - z2201_HT_lightgbm_gan.r
+            - LOCAL
+            - 557ed821463c46b98c71dda4f2157c94
+            - capricious-frog-469
+mlflow:
+  iniciado: yes
+  conn:
+    tracking_username: labo2024v2
+    tracking_password: constructivism
+    tracking_uri: http://mlflow.rebelare.com/labo2024v2/
+usuario: martin_gaddi
+maquina: desktop-conceptual.c.formidable-bank-437200-g6.internal
+persistir: yes

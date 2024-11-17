@@ -1,0 +1,36 @@
+PARAM:
+  input_exps: SC-0001
+  meta:
+    script: /src/wf-etapas/z2601_KA_evaluate_kaggle.r
+  isems_submit:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  envios_desde: 1600
+  envios_hasta: 2400
+  envios_salto: 200
+  competition: labo-i-conceptual-2024-v-2
+time:
+  start: 20241115 011454
+  end: 20241115 021139
+status:
+  rank: 1
+  isem: 20
+ganancias_suavizadas: 5.9345

@@ -1,0 +1,4 @@
+fecha	id	status	workflow	expw	funcion
+20241114.142254	1	previo_end	~/buckets/b4/exp-final-sumaPCA/flow/wf_Exp2-002	~/buckets/b4/exp-final-sumaPCA/exp/DT-0001	DT_incorporar_dataset_competencia2024
+20241114.142256	2	actual_run	~/buckets/b4/exp-final-sumaPCA/flow/wf_Exp2-002	~/buckets/b4/exp-final-sumaPCA/exp/sumar-0002	sumar_PCA
+20241114.142324	3	actual_run	~/buckets/b4/exp-final-sumaPCA/flow/wf_Exp2-002	~/buckets/b4/exp-final-sumaPCA/exp/TS-0002	TS_strategy_base9

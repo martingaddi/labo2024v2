@@ -1,0 +1,2 @@
+fecha	id	status	workflow	expw	funcion
+20241114.222318	1	actual_run	~/buckets/b5/Cargas/flow/wf_Exp2-001	~/buckets/b5/Cargas/exp/DT-0001	DT_incorporar_dataset_competencia2024

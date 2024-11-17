@@ -1,0 +1,11 @@
+PARAM:
+  input_exps: DT-0001
+  meta:
+    script: /src/wf-etapas/z1201_CA_reparar_dataset.r
+  metodo: MachineLearning
+time:
+  start: 20241028 131749
+  end: 20241028 131812
+dataset:
+  ncol: 55
+  nrow: 976374

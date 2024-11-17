@@ -1,0 +1,8 @@
+fecha	id	status	workflow	expw	funcion
+20241114.223905	1	actual_run	~/buckets/b5/Cargas_Long/flow/wf_Exp2-001	~/buckets/b5/Cargas_Long/exp/DT-0001	DT_incorporar_dataset_competencia2024
+20241114.223918	2	actual_run	~/buckets/b5/Cargas_Long/flow/wf_Exp2-001	~/buckets/b5/Cargas_Long/exp/CA-0001	CA_catastrophe_base
+20241114.223937	3	actual_run	~/buckets/b5/Cargas_Long/flow/wf_Exp2-001	~/buckets/b5/Cargas_Long/exp/FEintra-0001	FEintra_manual_base
+20241114.223955	4	actual_run	~/buckets/b5/Cargas_Long/flow/wf_Exp2-001	~/buckets/b5/Cargas_Long/exp/DR-0001	DR_drifting_base
+20241114.224031	5	actual_run	~/buckets/b5/Cargas_Long/flow/wf_Exp2-001	~/buckets/b5/Cargas_Long/exp/FEhist-0001	FEhist_base
+20241114.224148	6	actual_run	~/buckets/b5/Cargas_Long/flow/wf_Exp2-001	~/buckets/b5/Cargas_Long/exp/FErf-0001	FErf_attributes_base
+20241114.224404	7	actual_run	~/buckets/b5/Cargas_Long/flow/wf_Exp2-001	~/buckets/b5/Cargas_Long/exp/Cargas-0001	Cargas

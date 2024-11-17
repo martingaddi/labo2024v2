@@ -1,0 +1,4 @@
+semilla: 999721
+input_exps: FErf-0001
+meta:
+  script: /src/wf-etapas/Dimensionalidad_con_Cargas_Script_Exp.R
