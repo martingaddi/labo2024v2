@@ -12,8 +12,8 @@ if( !exists("envg") ) envg <- env()  # global environment
 
 envg$EXPENV <- list()
 envg$EXPENV$bucket_dir <- "~/buckets/b1/"
-envg$EXPENV$exp_dir <- "~/buckets/b5/Cargas_Long/exp/"
-envg$EXPENV$wf_dir <- "~/buckets/b5/Cargas_Long/flow/"
+envg$EXPENV$exp_dir <- "~/buckets/b7/exp/"
+envg$EXPENV$wf_dir <- "~/buckets/b7/flow/"
 envg$EXPENV$repo_dir <- "~/labo2024v2/"
 envg$EXPENV$datasets_dir <- "~/buckets/b1/datasets/"
 envg$EXPENV$arch_ambiente <- "miAmbiente.yml"
@@ -586,16 +586,16 @@ wf_Exp2 <- function( pnombrewf )
   param_local <- exp_wf_init( pnombrewf ) # linea fija
   
   DT_incorporar_dataset_competencia2024()
-  CA_catastrophe_base( metodo="MachineLearning")
-  FEintra_manual_base()
-  DR_drifting_base(metodo="rank_cero_fijo")
-  FEhist_base()
-  
-  FErf_attributes_base( arbolitos= 20,
-                        hojas_por_arbol= 16,
-                        datos_por_hoja= 1000,
-                        mtry_ratio= 0.2
-  )
+  # CA_catastrophe_base( metodo="MachineLearning")
+  # FEintra_manual_base()
+  # DR_drifting_base(metodo="rank_cero_fijo")
+  # FEhist_base()
+  # 
+  # FErf_attributes_base( arbolitos= 20,
+  #                       hojas_por_arbol= 16,
+  #                       datos_por_hoja= 1000,
+  #                       mtry_ratio= 0.2
+  # )
   #CN_canaritos_asesinos_base(ratio=0.2, desvio=4.0)
   
   #Agrego la reducción
