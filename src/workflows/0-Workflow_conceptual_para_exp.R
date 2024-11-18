@@ -5,7 +5,7 @@ require("rlang")
 #Comentar el que no se haga, y descomentar el que se busca correr.
 
 #Correr baseline largo
-PARAM <- "src/workflows/1-Baseline_Largo.R"
+#PARAM <- "src/workflows/1-Baseline_Largo.R"
 
 #Correr baseline corto
 #PARAM <- "src/workflows/2-Baseline_Corto.R"
@@ -17,10 +17,10 @@ PARAM <- "src/workflows/1-Baseline_Largo.R"
 #PARAM <- "src/workflows/4-Corto_con_PCA.R"
 
 #Correr Suma de PCA Largo
-#PARAM <- "src/workflows/5-Largo_SUMA_PCA.R"
+PARAM <- "src/workflows/5-Largo_Suma_PCA.R"
 
 #Correr Suma de PCA Corto
-#PARAM <- "src/workflows/6-Corto_SUMA_PCA.R"
+#PARAM <- "src/workflows/6-Corto_Suma_PCA.R"
 
 #Correr análisis Loadings
 #PARAM <- "src/workflows/7-Obtencion_de_Cargas_Largo.R"
