@@ -5,7 +5,7 @@ require("rlang")
 #Comentar el que no se haga, y descomentar el que se busca correr.
 
 #Correr Final
-PARAM <- "src/workflows/Lanzamiento_final-Pruebas.R"
+PARAM <- "src/workflows/Lanzamiento_con_Canaritos_final-Pruebas.R"
 
 #Correr baseline largo
 #PARAM <- "src/workflows/1-Baseline_Largo.R"

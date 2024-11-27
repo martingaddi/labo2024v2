@@ -13,8 +13,8 @@ if( !exists("envg") ) envg <- env()  # global environment
 
 envg$EXPENV <- list()
 envg$EXPENV$bucket_dir <- "~/buckets/b1"
-envg$EXPENV$exp_dir <- "~/buckets/b1/TEST2-expw-SEMI/"
-envg$EXPENV$wf_dir <- "~/buckets/b1/TEST2-flow-SEMI/"
+envg$EXPENV$exp_dir <- "~/buckets/b1/Canaritos2-expw-SEMI/"
+envg$EXPENV$wf_dir <- "~/buckets/b1/Canaritos2-flow-SEMI/"
 envg$EXPENV$repo_dir <- "~/labo2024v2/"
 envg$EXPENV$datasets_dir <- "~/buckets/b1/datasets/"
 envg$EXPENV$messenger <- "~/install/zulip_enviar.sh"
@@ -353,8 +353,8 @@ HT_tuning_semillerio <- function( pinputexps, semillerio, bo_iteraciones, bypass
     max_depth = -1L, # -1 significa no limitar,  por ahora lo dejo fijo
     min_gain_to_split = 0.0, # min_gain_to_split >= 0.0
     min_sum_hessian_in_leaf = 0.001, #  min_sum_hessian_in_leaf >= 0.0
-    lambda_l1 = c(0.0, 100.0), #Recomendación Firpo #0.0, # lambda_l1 >= 0.0
-    lambda_l2 = c(0.0, 1000.0), #Recomendación Firpo #0.0, # lambda_l2 >= 0.0
+    lambda_l1 = 55.0, #Tomo el promedio de las mejores ganancias de mi test previo #c(0.0, 100.0), #Recomendación Firpo #0.0, # lambda_l1 >= 0.0
+    lambda_l2 = 900.0, #Tomo un valor cercano al mejor que obtuve en el test previo #c(0.0, 1000.0), #Recomendación Firpo #0.0, # lambda_l2 >= 0.0
     max_bin = 31L, # lo debo dejar fijo, no participa de la BO
 
     num_iterations = 9999L, # un numero muy grande
@@ -377,9 +377,9 @@ HT_tuning_semillerio <- function( pinputexps, semillerio, bo_iteraciones, bypass
     feature_fraction = c(0.5,1.0), #Recomendación Firpo #c( 0.05, 0.95 ),
     
     #Sumo Recomendación Firpo
-    min_data_in_leaf = c(1L, 2500L, "integer"),
-    bagging_fraction = c(0.5, 0.9),
-    num_leaves = c(20L, 200L, "integer")
+    min_data_in_leaf = c(200L, 1300L, "integer"),
+    bagging_fraction = 0.6, #TOmo valor que promediaba en los mejores. #c(0.5, 0.9),
+    num_leaves = c(50L, 150L, "integer")
     
     #leaf_size_log = c( -10, -5),   # deriva en min_data_in_leaf
     #coverage_log = c( -8, 0 )      # deriva en num_leaves
@@ -470,20 +470,20 @@ wf_SEMI_sep <- function( pnombrewf )
   DR_drifting_base(metodo="deflacion") #Recomendación Antequera #  #"rank_cero_fijo")
   FEhist_base()
   ultimo <- FErf_attributes_base()
-  #CN_canaritos_asesinos_base(ratio=0.2, desvio=4.0)
+  CN_canaritos_asesinos_base(ratio=0.2, desvio=4.0)
 
   ts9 <- TS_strategy_base9()
 
   # la Bayesian Optimization con el semillerio dentro
   ht <- HT_tuning_semillerio(
     semillerio = 50, # semillerio dentro de la Bayesian Optim
-    bo_iteraciones = 50  # iteraciones inteligentes, apenas 10
+    bo_iteraciones = 25 #Las reduzco por tiempo #50  # iteraciones inteligentes, apenas 10
   )
 
 
   fm <- FM_final_models_lightgbm_semillerio( 
     c(ht, ts9), # los inputs
-    ranks = c(2), # 1 = el mejor de la bayesian optimization
+    ranks = c(1), # 1 = el mejor de la bayesian optimization
     semillerio = 50,   # cantidad de semillas finales
     repeticiones_exp = 1  # cantidad de repeticiones del semillerio
   )

@@ -13,8 +13,8 @@ if( !exists("envg") ) envg <- env()  # global environment
 
 envg$EXPENV <- list()
 envg$EXPENV$bucket_dir <- "~/buckets/b1"
-envg$EXPENV$exp_dir <- "~/buckets/b1/TEST2-expw-SEMI/"
-envg$EXPENV$wf_dir <- "~/buckets/b1/TEST2-flow-SEMI/"
+envg$EXPENV$exp_dir <- "~/buckets/b1/TEST3-expw-SEMI/"
+envg$EXPENV$wf_dir <- "~/buckets/b1/TEST3-flow-SEMI/"
 envg$EXPENV$repo_dir <- "~/labo2024v2/"
 envg$EXPENV$datasets_dir <- "~/buckets/b1/datasets/"
 envg$EXPENV$messenger <- "~/install/zulip_enviar.sh"
@@ -353,14 +353,14 @@ HT_tuning_semillerio <- function( pinputexps, semillerio, bo_iteraciones, bypass
     max_depth = -1L, # -1 significa no limitar,  por ahora lo dejo fijo
     min_gain_to_split = 0.0, # min_gain_to_split >= 0.0
     min_sum_hessian_in_leaf = 0.001, #  min_sum_hessian_in_leaf >= 0.0
-    lambda_l1 = c(0.0, 100.0), #Recomendación Firpo #0.0, # lambda_l1 >= 0.0
-    lambda_l2 = c(0.0, 1000.0), #Recomendación Firpo #0.0, # lambda_l2 >= 0.0
+    lambda_l1 = 32.0,#c(0.0, 100.0), #Recomendación Firpo #0.0, # lambda_l1 >= 0.0
+    lambda_l2 = 907.0,#c(0.0, 1000.0), #Recomendación Firpo #0.0, # lambda_l2 >= 0.0
     max_bin = 31L, # lo debo dejar fijo, no participa de la BO
 
     num_iterations = 9999L, # un numero muy grande
     early_stopping_base = 200L,
 
-    #bagging_fraction = 1.0, # 0.0 < bagging_fraction <= 1.0
+    bagging_fraction = 1.0, # 0.0 < bagging_fraction <= 1.0
     pos_bagging_fraction = 1.0, # 0.0 < pos_bagging_fraction <= 1.0
     neg_bagging_fraction = 1.0, # 0.0 < neg_bagging_fraction <= 1.0
     is_unbalance = FALSE, #
@@ -378,7 +378,7 @@ HT_tuning_semillerio <- function( pinputexps, semillerio, bo_iteraciones, bypass
     
     #Sumo Recomendación Firpo
     min_data_in_leaf = c(1L, 2500L, "integer"),
-    bagging_fraction = c(0.5, 0.9),
+    #bagging_fraction = c(0.5, 0.9),
     num_leaves = c(20L, 200L, "integer")
     
     #leaf_size_log = c( -10, -5),   # deriva en min_data_in_leaf
@@ -452,6 +452,18 @@ KA_evaluate_kaggle_semillerio <- function( pinputexps )
 
   return( exp_correr_script( param_local ) ) # linea fija
 }
+
+sumar_PCA <- function( pinputexps ) {
+  # Primero excluimos las variables que no deben formar parte de esta reducción
+  
+  if( -1 == (param_local <- exp_init())$resultado ) return( 0 ) # linea fija
+  
+  param_local$meta$script <- "/src/wf-etapas/SUMA_Dimensionalidad_Script_Exp.R"
+  
+  
+  return(exp_correr_script(param_local))
+}
+
 #------------------------------------------------------------------------------
 #------------------------------------------------------------------------------
 # A partir de ahora comienza la seccion de Workflows Completos
@@ -471,7 +483,8 @@ wf_SEMI_sep <- function( pnombrewf )
   FEhist_base()
   ultimo <- FErf_attributes_base()
   #CN_canaritos_asesinos_base(ratio=0.2, desvio=4.0)
-
+  sumar_PCA()
+  
   ts9 <- TS_strategy_base9()
 
   # la Bayesian Optimization con el semillerio dentro
